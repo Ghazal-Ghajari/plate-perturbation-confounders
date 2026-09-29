@@ -1,0 +1,28 @@
+# data, caches and large results (not redistributed)
+data/
+results/**/*.npz
+results/**/*.npy
+results/**/*.pkl
+*.h5ad
+*.h5
+*.mtx
+*.mtx.gz
+*.rds
+*.tar.gz
+*.parquet
+ST-SE-Parse/
+Rhaister/
+# python / jupyter
+__pycache__/
+*.egg-info/
+.ipynb_checkpoints/
+.pytest_cache/
+# latex
+*.aux
+*.log
+*.out
+*.bbl
+*.blg
+*.toc
+# OS
+.DS_Store
