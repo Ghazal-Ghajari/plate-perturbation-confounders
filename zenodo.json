@@ -1,0 +1,12 @@
+{
+  "title": "plate-perturbation-confounders: code and donorvar package",
+  "description": "Code, the donorvar Python package and notebooks reproducing all analyses and figures of 'Technical confounders of inter-individual variation and model evaluation in plate-based single-cell perturbation screens'.",
+  "upload_type": "software",
+  "license": "MIT",
+  "creators": [
+    {"name": "Ghajari, Ghazal", "affiliation": "Wright State University"},
+    {"name": "Amsaad, Fathi", "affiliation": "Wright State University"},
+    {"name": "Prasad, T. K.", "affiliation": "Wright State University"}
+  ],
+  "keywords": ["single-cell", "perturbation screens", "inter-individual variation", "well effects", "benchmark evaluation"]
+}
