@@ -6,11 +6,11 @@ authors:
     given-names: Ghazal
     affiliation: "Department of Computer Science and Engineering, Wright State University"
     email: Ghajari.2@wright.edu
+  - family-names: Thirunarayan
+    given-names: Krishnaprasad
+    affiliation: "Department of Computer Science and Engineering, Wright State University"
   - family-names: Amsaad
     given-names: Fathi
-    affiliation: "Department of Computer Science and Engineering, Wright State University"
-  - family-names: Prasad
-    given-names: T. K.
     affiliation: "Department of Computer Science and Engineering, Wright State University"
 version: 1.0.0
 date-released: 2026-09-28

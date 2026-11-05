@@ -1,7 +1,7 @@
 # plate-perturbation-confounders
 
 Code for **"Plate design confounds donor variation and model evaluation in single-cell perturbation screens"**
-(Ghajari, Amsaad, Prasad; Wright State University).
+(Ghajari, Thirunarayan, Amsaad; Wright State University).
 
 It contains:
 - `donorvar/` — Python package (as `donorvar-0.1.0.zip`): well-aware measurement of donor-to-donor variation (pseudobulks from raw counts, inert-reference responses with equal cell numbers, cross-half size/shape estimator with well-noise correction, well noise from replicate control wells, cross-cell-type coordination with technical baselines, simulator).
@@ -38,8 +38,9 @@ pip install scanpy anndata h5py pydeseq2 matplotlib seaborn huggingface_hub myge
 | 9 | `aim1_benchmark_audit`, `rhaister_rescoring`, `state_rescoring` | Audit 3 |
 | 10 | `dictionary_audit`, `dictionary_position_check`, `parse_deg_power_check` | Audit 4 (DEG counts; power and distance) |
 | 11 | `inert_receptor_check` | receptor expression; strict inert set (re-run 7, 9, 10 with `INERT = ["TPO", "Megalin", "PSPN", "EPO", "EGF"]`) |
+| 11b | `tahoe_metadata_check`, `tahoe_dmso_check`, `tahoe_dmso_tests`, `tahoe_drugs_and_rows` | Tahoe-100M: DMSO-well pseudobulks, well share, DEG floor, shared well noise, comparison with compound responses, row test (Figure S6) |
 | 12 | `donorvar_parse_example` | the corrected analysis run through the package |
-| 13 | `make_figures` | figures from `results/`, including the randomized-layout simulation (Figure S4) and response size (Figure S6) |
+| 13 | `make_figures` | figures from `results/`, including the randomized-layout simulation (Figure S4), response size (Figure S7) and shared structure (Figure S8) |
 
 Notebooks expect to be run from the repository root, with data in `data/` and results written to `results/`.
 
@@ -52,7 +53,8 @@ Notebooks expect to be run from the repository root, with data in `data/` and re
 | S3 (OP3 positive controls) | `op3_positive_controls` |
 | S4 (randomized layout, simulation; no data needed) | `make_figures` |
 | S5 (DEG power and distance) | `parse_deg_power_check` |
-| S6 (response size), S7 (shared structure) | `make_figures` |
+| S6 (Tahoe-100M; file `FigS8_tahoe.png`) | `tahoe_drugs_and_rows` |
+| S7 (response size; file `FigS6_response_size.png`), S8 (shared structure; file `FigS7_shared_structure.png`) | `make_figures` |
 
 ## Data sources
 - Parse 10M PBMC cytokines: https://www.parsebiosciences.com/datasets/10-million-human-pbmcs-in-a-single-experiment/ (CC BY-NC 4.0)
@@ -65,6 +67,7 @@ Notebooks expect to be run from the repository root, with data in `data/` and re
 - Nadig et al. 2025: GEO GSE264667
 - Rhaister: HuggingFace `tahoebio/Rhaister`, `tahoebio/parse-de-rhaister`
 - State predictions: HuggingFace `arcinstitute/ST-SE-Parse`
+- Tahoe-100M: HuggingFace `tahoebio/Tahoe-100M`
 
 ## Citation
 See `CITATION.cff` (the Zenodo DOI will be added on release).
